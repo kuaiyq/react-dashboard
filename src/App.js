@@ -1,10 +1,20 @@
-import "./styles.css";
+import React from "react";
+import "./styles/common.css";
+import Header from "./components/Header.js";
+import TopCardList from "./components/top-card-list.js";
+import Overview from "./components/Overview.js";
+import Switch from "./components/Switch.js";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <>
+      <Header>
+        <Switch />
+      </Header>
+      <TopCardList />
+      <Overview />
+    </>
   );
 }
+
+export default App;
